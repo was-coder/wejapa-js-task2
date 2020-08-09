@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(/image/form1.jpg);
+    background-image: url(/image/web-form.jpg);
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,14 +93,11 @@ body {
 
         button {
             border: none;
-        }
-
-        a {
             position: relative;
             font-size: 17px;
             width: 180px;
-            top: 50%;
-            left:150%;
+            top: -30px;
+            left:50%;
             transform: translate(-50%,50%);
             font-weight: bold;
             letter-spacing: 2px;
@@ -120,13 +117,13 @@ body {
                 stroke: #235789;
                 stroke-width: 5;
                 transition:0.5s;
-                stroke-dasharray:350;
+                stroke-dasharray:450;
                 stroke-dashoffset: 0;
             }
         }
-        a:hover svg rect {
-            stroke-dasharray: 100,280;
-            stroke-dashoffset: 225;
+        button:hover svg rect {
+            stroke-dasharray: 100,450;
+            stroke-dashoffset: 285;
         }
     }
 }
