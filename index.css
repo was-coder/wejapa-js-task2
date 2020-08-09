@@ -1,0 +1,134 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(/image/form1.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container {
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 40px 100px;
+}
+
+body .container .form-control {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+body .container .form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+body .container .form-control input {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 5px;
+}
+
+body .container .form-control .success, body .container .form-control .error {
+  position: absolute;
+  top: 50px;
+  right: -10px;
+  visibility: hidden;
+}
+
+body .container .form-control small {
+  visibility: hidden;
+  font-weight: 500;
+}
+
+body .container .success input {
+  border-color: green;
+}
+
+body .container .success .success {
+  color: green;
+  visibility: visible;
+}
+
+body .container .success small {
+  color: green;
+  visibility: visible;
+}
+
+body .container .error input {
+  border-color: red;
+}
+
+body .container .error .error {
+  color: red;
+  visibility: visible;
+}
+
+body .container .error small {
+  color: red;
+  visibility: visible;
+}
+
+body .container button {
+  border: none;
+}
+
+body .container a {
+  position: relative;
+  font-size: 17px;
+  width: 180px;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-align: center;
+  padding: 10px 20px;
+  color: #235789;
+}
+
+body .container a svg, body .container a svg rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke: #235789;
+  stroke-width: 5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  stroke-dasharray: 350;
+  stroke-dashoffset: 0;
+}
+
+body .container a:hover svg rect {
+  stroke-dasharray: 100,280;
+  stroke-dashoffset: 225;
+}
+/*# sourceMappingURL=index.css.map */

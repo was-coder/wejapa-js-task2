@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="/all.js"></script> 
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <h1 class="text-capitalize">create account</h1>
+            <form action="#" id="form" class="form">
+                <div class="form-control text-capitalize">
+                    <label for="fullname">Fullname</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname here">
+                    <i class="fas fa-check-circle success"></i>
+                    <i class="fas fa-exclamation-circle error"></i>
+                    <small>Errror Message</small>
+                </div>
+                <div class="form-control text-capitalize">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email here">
+                    <i class="fas fa-check-circle success"></i>
+                    <i class="fas fa-exclamation-circle error"></i>
+                    <small>Errror Message</small>
+                </div>
+                <div class="form-control text-capitalize">
+                    <label for="phone">phone number</label>
+                    <input type="number" name="phone" id="phone" placeholder="Enter your phone number here">
+                    <i class="fas fa-check-circle success"></i>
+                    <i class="fas fa-exclamation-circle error"></i>
+                    <small>Errror Message</small>
+                </div>
+                <div class="form-control text-capitalize">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password here">
+                    <i class="fas fa-check-circle success"></i>
+                    <i class="fas fa-exclamation-circle error"></i>
+                    <small>Errror Message</small>
+                </div>
+                <div class="form-control text-capitalize">
+                    <label for="pass-check">password check</label>
+                    <input type="password" name="pass-check" id="pass-check" placeholder="Confirm your password">
+                    <i class="fas fa-check-circle success"></i>
+                    <i class="fas fa-exclamation-circle error"></i>
+                    <small>Errror Message</small>
+                </div>
+                <button>
+                    <a href="#form" class="text-capitalize">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                        submit
+                    </a>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="/bootstrap.bundle.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
