@@ -1,11 +1,11 @@
 * {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Montserrat', sans-serif;
   background-image: url(/image/form1.jpg);
   min-height: 100vh;
@@ -24,23 +24,33 @@ body {
 }
 
 body .container {
-  background: #fff;
+  background-color: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  padding: 40px 100px;
+  padding: 15px 5px;
+  width: 500px;
+  max-width: 95%;
+}
+
+body .container .h1 {
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 1px solid #000;
 }
 
 body .container .form-control {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   position: relative;
   padding-bottom: 10px;
+  border: none;
 }
 
 body .container .form-control label {
   display: inline-block;
   margin-bottom: 5px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 body .container .form-control input {
@@ -48,12 +58,13 @@ body .container .form-control input {
   width: 100%;
   height: 2.5rem;
   padding-left: 5px;
+  font-weight: 500;
 }
 
 body .container .form-control .success, body .container .form-control .error {
   position: absolute;
-  top: 50px;
-  right: -10px;
+  top: 47px;
+  right: 17px;
   visibility: hidden;
 }
 
@@ -99,7 +110,7 @@ body .container a {
   font-size: 17px;
   width: 180px;
   top: 50%;
-  left: 60%;
+  left: 150%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
   font-weight: bold;

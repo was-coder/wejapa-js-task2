@@ -10,57 +10,61 @@
     <title>Form Validation</title>
 </head>
 <body>
+    <div class="container">
 
-    <section>
-        <div class="container">
-            <h1 class="text-capitalize">create account</h1>
-            <form action="#" id="form" class="form">
-                <div class="form-control text-capitalize">
-                    <label for="fullname">Fullname</label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname here">
-                    <i class="fas fa-check-circle success"></i>
-                    <i class="fas fa-exclamation-circle error"></i>
-                    <small>Errror Message</small>
-                </div>
-                <div class="form-control text-capitalize">
-                    <label for="email">email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email here">
-                    <i class="fas fa-check-circle success"></i>
-                    <i class="fas fa-exclamation-circle error"></i>
-                    <small>Errror Message</small>
-                </div>
-                <div class="form-control text-capitalize">
-                    <label for="phone">phone number</label>
-                    <input type="number" name="phone" id="phone" placeholder="Enter your phone number here">
-                    <i class="fas fa-check-circle success"></i>
-                    <i class="fas fa-exclamation-circle error"></i>
-                    <small>Errror Message</small>
-                </div>
-                <div class="form-control text-capitalize">
-                    <label for="password">password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter your password here">
-                    <i class="fas fa-check-circle success"></i>
-                    <i class="fas fa-exclamation-circle error"></i>
-                    <small>Errror Message</small>
-                </div>
-                <div class="form-control text-capitalize">
-                    <label for="pass-check">password check</label>
-                    <input type="password" name="pass-check" id="pass-check" placeholder="Confirm your password">
-                    <i class="fas fa-check-circle success"></i>
-                    <i class="fas fa-exclamation-circle error"></i>
-                    <small>Errror Message</small>
-                </div>
-                <button>
-                    <a href="#form" class="text-capitalize">
-                        <svg>
-                            <rect></rect>
-                        </svg>
-                        submit
-                    </a>
-                </button>
-            </form>
-        </div>
-    </section>
+        <div class="text-capitalize h1">create account</div>
+
+        <form action="#" method="POST" id="form" class="form">
+            <div class="form-control">
+                <label for="fullname">fullname</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname here">
+                <i class="fas fa-check-circle success"></i>
+                <i class="fas fa-exclamation-circle error"></i>
+                <small>Errror Message</small>
+            </div>
+    
+            <div class="form-control">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email here">
+                <i class="fas fa-check-circle success"></i>
+                <i class="fas fa-exclamation-circle error"></i>
+                <small>Errror Message</small>
+            </div>
+                
+            <div class="form-control">
+                <label for="phone">phone number</label>
+                <input type="number" name="phone" id="phone" placeholder="Enter your phone number here">
+                <i class="fas fa-check-circle success"></i>
+                <i class="fas fa-exclamation-circle error"></i>
+                <small>Errror Message</small>
+            </div>
+                
+            <div class="form-control">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password here">
+                <i class="fas fa-check-circle success"></i>
+                <i class="fas fa-exclamation-circle error"></i>
+                <small>Errror Message</small>
+            </div>
+                
+            <div class="form-control">
+                <label for="pass-check">password check</label>
+                <input type="password" name="pass-check" id="pass-check" placeholder="Confirm your password">
+                <i class="fas fa-check-circle success"></i>
+                <i class="fas fa-exclamation-circle error"></i>
+                <small>Errror Message</small>
+            </div>
+            
+            <button>
+                <a href="#form" class="text-capitalize">
+                    <svg>
+                        <rect></rect>
+                    </svg>
+                    submit
+                </a>
+            </button>
+        </form>
+    </div>
 
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/index.js"></script>
