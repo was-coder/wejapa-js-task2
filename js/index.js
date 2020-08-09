@@ -51,7 +51,7 @@ function getValues() {
         setError(password, "Password cannot be blank");
     }
     else if(!passwordCheck(passwordValue)) {
-        setError(password, "Password must contain at least 1 upper and numeric character and be more than 6 character");
+        setError(password, "It must contain at least 1 upper, numeric and be more than 6 character");
     }
     else {
         setSuccess(password, "Accepted Input");
