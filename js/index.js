@@ -3,7 +3,6 @@ const fullname = document.getElementById("fullname");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const password = document.getElementById("password");
-const passCheck = document.getElementById("pass-check");
 
 
 form.addEventListener("submit", (e) => {
@@ -17,7 +16,6 @@ function getValues() {
     const emailValue = email.value.trim();
     const phoneValue = phone.value.trim();
     const passwordValue = password.value.trim();
-    const passCheckValue = passCheck.value.trim();
 
     if(fullnameValue === "") {
         setError(fullname, "Name cannot be blank");
@@ -57,16 +55,6 @@ function getValues() {
     }
     else {
         setSuccess(password, "Accepted Input");
-    }
-
-    if(passCheckValue === "") {
-        setError(passCheck, "Password check cannot be blank");
-    }
-    else if(passCheckValue !== passwordValue) {
-        setError(passCheck, "Password does not match");
-    }
-    else {
-        setSuccess(passCheck, "Accepted Input");
     }
 }
 
