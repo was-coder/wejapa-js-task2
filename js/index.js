@@ -20,10 +20,53 @@ function getValues() {
     const passCheckValue = passCheck.value.trim();
 
     if(fullnameValue === "") {
-        setError(fullname, "Fullname cannot be blank");
+        setError(fullname, "Name cannot be blank");
+    }
+    else if(!nameCheck(fullnameValue)) {
+        setError(fullname, "Name should be Alphabet and contain FirstName and LastName")
     }
     else {
         setSuccess(fullname, "Accepted Input");
+    }
+
+    if(emailValue === "") {
+        setError(email, "Email cannot be blank");
+    }
+    else if(!emailCheck(emailValue)) {
+        setError(email, "Email is not valid");
+    }
+    else {
+        setSuccess(email, "Accepted Input");
+    }
+
+    if(phoneValue === "") {
+        setError(phone, "Phone Number is required");
+    }
+    else if(!phoneCheck(phoneValue)) {
+        setError(phone, "It must start with + and contain 14 numbers after the +")
+    }
+    else {
+        setSuccess(phone, "Accepted Input");
+    }
+
+    if(passwordValue === "") {
+        setError(password, "Password cannot be blank");
+    }
+    else if(!passwordCheck(passwordValue)) {
+        setError(password, "Password must contain at least 1 upper, lower, numeric character and be more than 6 character");
+    }
+    else {
+        setSuccess(password, "Accepted Input");
+    }
+
+    if(passCheckValue === "") {
+        setError(passCheck, "Password check cannot be blank");
+    }
+    else if(passCheckValue !== passwordValue) {
+        setError(passCheck, "Password does not match");
+    }
+    else {
+        setSuccess(passCheck, "Accepted Input");
     }
 }
 
@@ -42,3 +85,23 @@ function setSuccess(value,message) {
     small.innerText = message;
     formControl.className = "form-control success";
 }
+
+function nameCheck(fullname) {
+    const getName = /^[a-z][a-z\s]*$ | [a-zA-Z ]*$/
+    return getName.test(String(fullname).toLowerCase()); 
+}
+
+function emailCheck(email) {
+    const getEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return getEmail.test(String(email).toLowerCase());
+}
+
+function phoneCheck(phone) {
+    const getPhone = /^\+?([0-9]{3})\)?([0-9]{4})?([0-9]{4})?([0-9]{3})$/;
+    return getPhone.test(phone);
+}
+
+function passwordCheck(password) {
+    const getPassword = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,})");
+    return getPassword.test(password);
+  }
